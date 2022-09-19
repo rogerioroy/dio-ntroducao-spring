@@ -1,0 +1,17 @@
+package com.dio.config;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.dio.repository.UserRepository;
+
+@Configuration
+public class BeanConfig {
+
+	@Bean
+	public UserRepository userRepository() {
+		System.out.println("Iniciando");
+		return new UserRepository();
+	}
+	
+}

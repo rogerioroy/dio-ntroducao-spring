@@ -1,0 +1,28 @@
+package com.dio.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.dio.repository.UserRepository;
+
+@Service
+public class UserService {
+	
+	@Autowired
+	private UserRepository userRepository;
+	
+	public List<String> buscarDadosBanco() {
+		List<String> nomes = new ArrayList<>();
+		System.out.println("Chamou o metodo de buscar");
+		return nomes;
+	}
+	
+	public void deletaDados() {
+		System.out.println("Chamou o metodo de deletar");
+
+	}
+
+}

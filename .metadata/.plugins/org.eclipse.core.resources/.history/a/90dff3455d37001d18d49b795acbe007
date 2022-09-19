@@ -1,0 +1,9 @@
+package com.dio.repository;
+
+public class UserRepository {
+	
+	public void deletaDados() {
+		System.out.println("Apagando Dados");
+	}
+
+}
