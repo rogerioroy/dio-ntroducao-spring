@@ -1,0 +1,12 @@
+package com.dio.config;
+
+import javax.inject.Inject;
+import javax.inject.Named;
+
+@Named
+public class CdiConfig {
+	
+	@Inject
+	private CdiTeste cdiTeste;
+	
+}
